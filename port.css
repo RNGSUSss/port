@@ -1,0 +1,171 @@
+*{
+ margin: 0;
+ padding: 0;  
+ font-family: 'Arial', sans-serif; 
+ box-sizing: border-box;
+}
+body{
+    background-image: url(image/paper_crop.png);
+    background-position: center;
+    background-size: 100%;
+    color: black;
+    width: auto;
+    height: auto;
+    
+}
+.container{
+    padding: 10px 10%;
+}
+.nav{
+    text-align: center;
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 200%;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: brown;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 1s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    
+    text-align: center;
+    margin-top: 20%;
+    font-size: xx-large;
+}
+#about{
+    padding: 80px 0;
+    color: black;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.colum1{
+    flex-basis: 35%;
+}
+.colum1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.colum2{
+    flex-basis: 60%;
+}
+.about-head{
+    
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.tab{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tablink{
+    margin-right: 50px;
+    font-size: xx-large;
+    font-weight: bolder;
+    cursor: pointer;
+    position: relative;
+}
+.tablink::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: brown;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 1s;
+}
+.tablink:hover::after{
+    width: 100%;
+}
+.tabcontent ul li{
+    font-size: x-large;
+    margin: 10px 0;
+}
+.tabcontent ul li img{
+    list-style: none;
+    width: 20%;
+}
+.tabcontent{
+    display: none;
+}
+.tabcontent.active-tab{
+    display: block;
+}
+section
+{
+    padding: 100px 11% 90px;
+}
+.assignment
+{
+    text-align: center;
+    font-size: large;
+}
+.link
+{
+    font-size: 15px;
+}
+@media only screen and (max-width: 600px){
+    
+    body{
+        background-image: url(image/paper_crop.png);
+        background-position: center;
+        background-size: 400%;
+    }
+    .colum1{
+        flex-basis: 50%;
+    }
+    .colum1 img{
+        width: 300%;
+        border-radius: 15px;
+    }
+    .about-head{
+    
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+    .tabcontent ul li{
+        font-size: xx-large;
+        margin: 10px 0;
+    }
+    .tabcontent ul li img{
+        list-style: none;
+        width: 100%;
+    }
+    .link{
+        font-size: xx-large;
+    }
+    .assignment
+{
+    text-align: center;
+    font-size: xx-large;
+}
+.link
+{
+    font-size: 15px;
+}
+}
+/* ref https://www.youtube.com/watch?v=0YFrGy_mzjY&t=2378s */ 

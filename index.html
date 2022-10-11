@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='port.css'>
+    <title> Portfolio Website </title>
+    <script> src= "port.js"</script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href = "#">HOME</a></li>
+                <li><a href = "#">ABOUT</a></li>
+                <li><a href = "#">MY WORK</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Portfolio</p>
+            <img src="image/postit_picture.png">
+        </div>
+    </div>
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="colum1">
+                    <img src="image/ryu_kub_ref.JPG">
+                </div>
+                <div class="colum2">
+                    <h1 class="about-head">ABOUT ME</h1>
+                    <p>
+                        Hi my name is Tanakit Nooyam you can call me "REW or RYU" I'm 21 now
+                        <br>I live on samutprakarn. I like coffee but I like dessert to
+                        <br>My hobbies is playgame , drawing and readbook
+                        <br>My skill drawing and pixel art 
+                        <br>I interest in gamedesign and Live2D
+                    </p>
+                </div>
+            </div>
+            <div class="tab">
+                <p class="tablink active-link" onclick="opentab('Hobbies')">Hobbies</p>
+                <p class="tablink"onclick="opentab('Skills')">Skills</p>
+                <p class="tablink"onclick="opentab('Interest')">Interest</p>
+            </div>
+            <div class="tabcontent active-tab" id="Hobbies">
+                <ul>
+                    <li><img src="image/54781.jpg"></li>
+                    <li>play game</li>
+                    <li><img src="image/charactor_design_A4.png"></li>
+                    <li>drawing</li>
+                    <li><img src="image/medium_aa7b8fcc4ee3a86626aca3157bbd8d697c38429a.jpg"></li>
+                    <li>readbook</li>
+                </ul>
+            </div>
+            <div class="tabcontent" id="Skills">
+                <ul>
+                    <li><img src="image/main.png"></li>
+                    <li>drawing</li>
+                    <li><img src="image/idle.png"></li>
+                    <li>pixel art</li>
+                </ul>
+            </div>
+            <div class="tabcontent" id="Interest">
+                <ul>
+                    <li><img src="image/Game-Designer-Job-Description.jpeg"></li>
+                    <li>gamedesign</li>
+                    <li><img src="image/live2d.jpg"></li>
+                    <li>Live2D</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="assignment">
+        <article>Assignment</article>
+        <div class="link">
+            <button id="as4"> Assignment 4</button>
+        </div>
+    
+    </section>
+    <script>
+       tablinks = document.getElementsByClassName("tablink")
+       tabcontents = document.getElementsByClassName("tabcontent")
+       function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+       }
+       window.onload = loadPage;
+    function loadPage()
+    {
+    var ass4 = document.getElementById("ass4")
+    ass4.onclick = as4LoadPage
+    }
+    function as4LoadPage()
+    {
+        location.href= "https://rngsusss.github.io/stupid-guy-with-stupid-code/";
+    }
+    </script>
+    
+</body> 
+</html>
